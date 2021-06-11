@@ -1,5 +1,3 @@
-const url = "http://172.19.82.116"
-
 function getArduinoState(url) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", url, false); // false for synchronous request
@@ -18,9 +16,9 @@ function setData(arduinos) {
     })
 }
 
-setData(getArduinoState(`${url}:8080/api`))
+setData(getArduinoState(`http://${document.location.hostname}:8080/api`))
 
-const socket = io.connect(`${url}:8081`)
+const socket = io.connect(`http://${document.location.hostname}:8081`)
 socket.on('connect', data => {
     socket.emit("connection")
 })
