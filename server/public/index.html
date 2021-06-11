@@ -1,0 +1,42 @@
+<html lang="fr">
+
+<head>
+    <title>Panier Connecte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <p> gris : pas de prelevement </p>
+    <p> vert : il y a des prelevements! </p>
+
+
+    <table>
+        <tr>
+            <th>HOPITAL</th>
+            <th>ETAGE</th>
+            <th>SERVICE</th>
+            <th>ETAT PANIER</th>
+        </tr>
+        <tr>
+            <td rowspan="4"> SAINT ELOI </td>
+            <td>2</td>
+            <td>Labovirologie</td>
+            <td id="1"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Block AC</td>
+            <td id="2"></td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="/socket.io/client-dist/socket.io.js"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>

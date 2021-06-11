@@ -1,0 +1,18 @@
+{
+  "arduinos": [
+    {
+      "id": 1,
+      "location": "Saint-Eloi",
+      "floor": 2,
+      "service": "Labovirologie",
+      "state": 0
+    },
+    {
+      "id": 2,
+      "location": "Saint-Eloi",
+      "floor": 2,
+      "service": "Labovirologie",
+      "state": 0
+    }
+  ]
+}
